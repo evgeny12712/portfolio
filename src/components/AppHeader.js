@@ -1,9 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 import logo from '../assets/imgs/logo.jpeg'
 import logoMobile from '../assets/imgs/logo-mobile.jpeg'
 import { Link } from 'react-router-dom'
+import Burger from './Burger'
 export default function AppHeader() {
+    const [open, setOpen] = useState(false)
+
+    function toggleNav() {
+        console.log(open)
+        setOpen(prevState => prevState = !prevState)
+    }
+
     return (
         <Header>
             <LogoWrapper>
@@ -14,8 +22,8 @@ export default function AppHeader() {
                     <img className="logo-mobile" src={logoMobile} alt="logo-mobile" />
                 </Link>
             </LogoWrapper>
-
-            <Nav>
+            <Burger isOpen={open} toggleNav={toggleNav} />
+            <Nav isOpen={open}>
                 <Link to="/portfolio">Portfolio</Link>
                 <Link to="/about">about</Link>
             </Nav>
@@ -30,9 +38,11 @@ const Header = styled.header`
     align-items: center;
     margin-inline: 50px;
     font-size: 1.2rem;
+    margin-block-start: 20px;
     @media(max-width: 768px) {
         margin-inline: 10px;
         font-size: 0.875rem;
+        margin-block-start: 0;
     }
 `
 
@@ -89,6 +99,17 @@ const Nav = styled.div`
     }
 
     @media(max-width: 768px) {
+        transform: ${({ isOpen }) => isOpen ? 'translateX(0)' : 'translateX(100%)'};
+        height: 100%;
+        width: 150px;
+        padding: 20px;
+        padding-top: 60px;
         gap: 30px;
+        flex-direction: column;
+        position: fixed;
+        right: 0;
+        top: 0;
+        background-color: #131538;
+        transition: transform 0.3s ease-in-out;
     }
 `

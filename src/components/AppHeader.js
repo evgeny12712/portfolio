@@ -111,5 +111,6 @@ const Nav = styled.div`
         top: 0;
         background-color: #131538;
         transition: transform 0.3s ease-in-out;
+        z-index: 1;
     }
 `

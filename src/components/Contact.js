@@ -37,6 +37,10 @@ const Contacts = styled.div`
     position: fixed;
     top: 25%;
     width: fit-content;
+    z-index: 1;
+    @media(max-width: 765px) {
+        opacity: 0.5;
+    }
 `
 
 const Ul = styled.ul`
@@ -64,7 +68,12 @@ const Li = styled.li`
     &:hover {
         transform: translate(0);
         @media(max-width: 765px) {
-            transform: translate(-65%);
+            transform: translate(-75%);
         }
+    }
+
+    @media (max-width: 765px) {
+        transform: translate(-75%);
+        padding: 5px;
     }
 `

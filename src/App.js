@@ -3,9 +3,9 @@ import './App.css';
 import AppHeader from './components/AppHeader';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Portfolio from './components/Portfolio';
-import About from './components/About';
 import Home from './components/Home';
 import Contact from './components/Contact';
+import AppFooter from './components/AppFooter'
 function App() {
   return (
     <div>
@@ -15,8 +15,8 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/about" element={<About />} />
         </Routes>
+        <AppFooter />
       </Router>
     </div>
   );

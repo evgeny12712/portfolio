@@ -21,7 +21,7 @@ const StyledBurger = styled.div`
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    z-index: 2;
+    z-index: 3;
     div {
         width: 2rem;
         height: .25rem;

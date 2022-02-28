@@ -46,6 +46,7 @@ const Container = styled.section`
     align-items: center;
     width: 60%;
     margin: auto;
+    margin-block-end: 50px;
     & h1 {
         font-size: 3rem;
         letter-spacing: 0.875rem;

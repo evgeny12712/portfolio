@@ -1,8 +1,19 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import { useLocation } from 'react-router-dom'
 import styled from 'styled-components'
 export default function Contact() {
+    const { pathname } = useLocation()
+    const [shoudlDisplay, setshouldDisplay] = useState(true)
+    useEffect(() => {
+        if (pathname === '/') {
+            setshouldDisplay(false)
+        } else {
+            setshouldDisplay(true)
+        }
+    }, [pathname])
+
     return (
-        <Contacts>
+        <Contacts shoudlDisplay={shoudlDisplay}>
             <Ul>
                 <Li bgc='#0077b5'>
                     <a href="https://www.linkedin.com/in/evgeny-mashkevich-7099aa1a6/" target="_blank">
@@ -40,6 +51,7 @@ const Contacts = styled.div`
     z-index: 1;
     @media(max-width: 765px) {
         opacity: 0.5;
+        opacity: ${({ shoudlDisplay }) => shoudlDisplay ? 0.5 : 0};
     }
 `
 

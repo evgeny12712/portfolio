@@ -171,6 +171,9 @@ const Skills = styled.div`
     gap: 20px;
     color: white;
     flex-wrap: wrap;
+    @media (max-width: 765px) {
+        justify-content: center;
+    }
 `
 
 const Skill = styled.div`
@@ -183,4 +186,5 @@ const Skill = styled.div`
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     font-family: Staatliches;
+    cursor: default;
 `

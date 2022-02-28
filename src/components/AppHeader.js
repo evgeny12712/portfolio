@@ -23,9 +23,9 @@ export default function AppHeader() {
                 </Link>
             </LogoWrapper>
             <Burger isOpen={open} toggleNav={toggleNav} />
-            <Nav isOpen={open}>
+            <Nav isOpen={open} onClick={() => setOpen(false)}>
                 <Link to="/portfolio">Portfolio</Link>
-                <Link to="/about">about</Link>
+                <Link to="/">Home</Link>
             </Nav>
         </Header >
     )
@@ -39,6 +39,7 @@ const Header = styled.header`
     margin-inline: 50px;
     font-size: 1.2rem;
     margin-block-start: 20px;
+    margin-block-end: 150px;
     @media(max-width: 768px) {
         margin-inline: 10px;
         font-size: 0.875rem;
@@ -111,6 +112,6 @@ const Nav = styled.div`
         top: 0;
         background-color: #131538;
         transition: transform 0.3s ease-in-out;
-        z-index: 1;
+        z-index: 2;
     }
 `

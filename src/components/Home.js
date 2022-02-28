@@ -13,7 +13,7 @@ export default function Home() {
                 </p>
                 <span>Checkout my latest projects : </span>
                 <Button>
-                    <Link to="/portfolio_">
+                    <Link to="/portfolio">
                         <span>
                             Portfolio
                         </span>

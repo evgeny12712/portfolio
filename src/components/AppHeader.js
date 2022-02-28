@@ -24,7 +24,7 @@ export default function AppHeader() {
             </LogoWrapper>
             <Burger isOpen={open} toggleNav={toggleNav} />
             <Nav isOpen={open} onClick={() => setOpen(false)}>
-                <Link to="/portfolio_">Portfolio</Link>
+                <Link to="/portfolio">Portfolio</Link>
                 <Link to="/">Home</Link>
             </Nav>
         </Header >

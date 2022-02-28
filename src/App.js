@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import AppHeader from './components/AppHeader';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'
 import Portfolio from './components/Portfolio';
 import Home from './components/Home';
 import Contact from './components/Contact';
@@ -14,7 +14,7 @@ function App() {
         <Contact />
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route path="/portfolio_" element={<Portfolio />} />
+          <Route exact path="/portfolio" element={<Portfolio />} />
         </Routes>
         <AppFooter />
       </Router>

@@ -14,7 +14,7 @@ function App() {
         <Contact />
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/portfolio_" element={<Portfolio />} />
         </Routes>
         <AppFooter />
       </Router>

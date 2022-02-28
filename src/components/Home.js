@@ -13,7 +13,7 @@ export default function Home() {
                 </p>
                 <span>Checkout my latest projects : </span>
                 <Button>
-                    <Link to="/portfolio">
+                    <Link to="/portfolio_">
                         <span>
                             Portfolio
                         </span>
@@ -62,7 +62,7 @@ const Wrapper = styled.div`
 `
 
 const Button = styled.div`
-& a {
+    & a {
         color: rgb(255,255,255,0.8);
         border: 1px solid rgb(255,255,255,0.3);
         display: block;

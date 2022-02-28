@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.ea3b945f.css",
+    "main.js": "/portfolio/static/js/main.5cd83465.js",
+    "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/netflix-clone.jpg": "/portfolio/static/media/netflix-clone.a241a7d587236d2aec2a.jpg",
+    "static/media/meme-generator.jpg": "/portfolio/static/media/meme-generator.6c4d8b3288b17d0131d2.jpg",
+    "static/media/disney-clone.jpg": "/portfolio/static/media/disney-clone.aa52905bb6e627e14f19.jpg",
+    "static/media/monday-clone.jpg": "/portfolio/static/media/monday-clone.69d431c9dd8064b51728.jpg",
+    "static/media/bitwallet.jpg": "/portfolio/static/media/bitwallet.85e500a8d2636ad1033a.jpg",
+    "static/media/Staatliches-Regular.ttf": "/portfolio/static/media/Staatliches-Regular.134482285baed3198bb5.ttf",
+    "static/media/appsus.jpg": "/portfolio/static/media/appsus.6a298f46349c15e9094f.jpg",
+    "static/media/logo.jpeg": "/portfolio/static/media/logo.54334d54d3393eeefec0.jpeg",
+    "static/media/logo-mobile.jpeg": "/portfolio/static/media/logo-mobile.1d2b7bad486c35ba9bc5.jpeg",
+    "static/media/logo.svg": "/portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/portfolio/index.html",
+    "main.ea3b945f.css.map": "/portfolio/static/css/main.ea3b945f.css.map",
+    "main.5cd83465.js.map": "/portfolio/static/js/main.5cd83465.js.map",
+    "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ea3b945f.css",
+    "static/js/main.5cd83465.js"
+  ]
+}

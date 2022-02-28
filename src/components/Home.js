@@ -32,6 +32,11 @@ const Container = styled.div`
     justify-content: center;
     font-family: Staatliches;
     margin-block-start: 150px;
+    @media(max-width: 765px) {
+        margin-block-start: 50px;
+        margin-block-end: 120px;
+        padding-inline: 30px;
+    }
     `
 
 const Wrapper = styled.div`
@@ -58,6 +63,12 @@ const Wrapper = styled.div`
     
     @media (max-width: 765px) {
         text-align: center;
+        h2 {
+            font-size: 1rem;
+        }
+        p {
+            font-size: 1rem;
+          }
     }
 `
 

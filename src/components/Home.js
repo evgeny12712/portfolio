@@ -31,6 +31,7 @@ const Container = styled.div`
     display: flex;
     justify-content: center;
     font-family: Staatliches;
+    margin-block-start: 150px;
     `
 
 const Wrapper = styled.div`

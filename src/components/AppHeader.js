@@ -39,7 +39,6 @@ const Header = styled.header`
     margin-inline: 50px;
     font-size: 1.2rem;
     margin-block-start: 20px;
-    margin-block-end: 150px;
     @media(max-width: 768px) {
         margin-inline: 10px;
         font-size: 0.875rem;
